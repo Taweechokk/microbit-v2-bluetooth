@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="Z)_.ohox#z+:b?h@a-i(">irButton</variable><variable id="fB7ci/#U.9(wPqUk^ex1">val</variable><variable id="]^HF}vIp~)gfzNwsq6cC">fenya</variable><variable id="ZU$:J`i|[$K0|L?6V]{C">r</variable><variable id="RgdQI({uD9,_IC1S.Z+x">temperature</variable><variable id="c=HhSAKNN!4@7iH:Ctw@">rawValue</variable><variable id="KRi(4!DBII[TixCQ=V9Q">value</variable><variable id="MzsMh6`hP2|3+Cdg|^h2">oldValue</variable><variable id="@/2?vH4NH=!=/+@EprgG">x</variable><variable id="!syX{bi!hj*%bq12zo0t">y</variable><variable id="tFPXfqC,/~vl^#tgn:n_">z</variable><variable id="J6o+?l@zL;skr#VCFe=;">right</variable><variable id="CaK.v0O61HL_yvQua8/E">left</variable><variable id="4Hz/@%=Uqyf%WFoTGD,?">pressed</variable><variable id="b61d*QvaA67Hk6S8trq[">val2</variable><variable id="nrM,5;)Ga/VUeK/w6a`6">duration</variable><variable id="e]7Cl]JE2%Y+XCkWEP-@">tm</variable><variable id="fh0DTuEoC,,`qF6|3|wz">j</variable><variable id="N{]:rb6nXtd/gfY0tk`c">matrix</variable><variable id="Zz)bMIGY2cHeX)J~I{O9">row</variable><variable id="zqk_zwinPZqoACE91nyU">col</variable><variable id="jw8r%R)d~+cghSrP~Hwl">readyForNextCommand</variable><variable id="`6nrJICXuPV#[FGt7sX)">message</variable><variable id="-lx4h5D4IAEj:[pH_b)x">function_name</variable><variable id="l5(00*c07|9xl4?XtUQI">function_id</variable><variable id="ZIYSHuPc0*C@MW2/}PZ;">response23</variable><variable id="(5JvNoQ|?fnRZuqnGrYw">response4</variable></variables><comment id="kUuh}g:{Y!3#8aFG7d}." x="4799" y="10040" w="160" h="120">
+IR Receiver
+</comment><comment id="jg;+uCfInCMa}ZJ$1py_" x="5004" y="10040" w="480" h="120">
+function read_ir_receiver(sensorPin: number): number {
+</comment><comment id="~fiy*Q}c`,a_j7njAiyG" x="5529" y="10040" w="450" h="120">
+pins.setPull(sensorPin, PinPullMode.PullNone)
+</comment><comment id="3Rwas8~Cm#fw~wzODk^Q" x="6024" y="10040" w="370" h="120">
+return pins.digitalReadPin(sensorPin)
+</comment><comment id="!kAd]]WcMrmD/u#we|26" x="6439" y="10040" w="160" h="120">
+}
+</comment><comment id="QjcyU.~!J-]tvq`MdThf" x="6644" y="10040" w="180" h="120">
+// Control RGB LED
+</comment><comment id="PN5IVlwKEjtyMU:=7E+g" x="6869" y="10040" w="480" h="120">
+function control_rgb_led(redPin: number, greenPin: number, bluePin: number, redVal: number, greenVal: number, blueVal: number): number {
+</comment><comment id="/+T,=*W+NKQ@[x*LrnNm" x="7394" y="10040" w="350" h="120">
+pins.analogWritePin(redPin, redVal)
+</comment><comment id="0Dy`P}yX+d,s7}ORZ#Y*" x="20" y="10555" w="390" h="120">
+pins.analogWritePin(greenPin, greenVal)
+</comment><comment id="{4#=I*]]e(;.L51L~A5)" x="455" y="10555" w="370" h="120">
+pins.analogWritePin(bluePin, blueVal)
+</comment><comment id="Cfo;0f2xIdU{fI86B)@a" x="870" y="10555" w="160" h="120">
+return 1
+</comment><comment id="=Xoq#I%q9ClnMe}Ei/je" x="1075" y="10555" w="160" h="120">
+}
+</comment></xml>
